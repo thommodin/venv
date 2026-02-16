@@ -57,3 +57,14 @@ uv run TD2 --help
 
 Both will result in:
 > Please use "TD2.LongOrfs" or "TD2.Predict"
+
+## Adding more dependencies/packages
+With uv, the command is similar to pip eg:
+
+```bash
+uv add pandas
+```
+
+uv will automatically search pypi (just like pip does) and install the package.
+
+Using `uv add` also adds it to the `pyproject.toml` such that if you were to start with a blank slate, you would re-create the exact same environment as before. Handy!
